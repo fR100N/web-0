@@ -1,0 +1,218 @@
+body{
+
+    background: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    .principal-container{
+        margin: 0;
+
+        #show1, #show2, #show3{
+            height: 3rem;
+        }
+
+        .tables > table{
+            margin-bottom: 0;
+        }
+
+        tbody tr th{
+            color: rgb(174, 123, 241);
+        }
+
+        #first-section{
+            padding-top: 10rem;
+        }
+
+        .lists{
+            padding-top: 7rem;
+        }
+
+        #testimonial {
+            background: #cccccc;
+            padding: 50px 0 30px 0;
+            text-align:center;
+            margin-top: 40px;
+        }
+
+        #info-one{
+            margin: 0;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .container{
+            margin: 0 auto;
+        }
+
+        .header{
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .logo-nav-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .logo{
+                letter-spacing: 15px;
+                font-size: 1.4em;
+            }
+
+            .menu-icon{
+                display: none;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        .navigation{
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li{
+                    display: inline-block;
+
+                    a{
+                        display: block;
+                        padding: 0.5rem 1rem;
+                        transition: all 0.4s linear;
+                        border-radius: 5px;
+                    }
+
+                    a:hover{
+                        background: #4a4a4a;
+                    }
+                }
+            }
+        }
+
+        .pie{
+            background: #333;
+            padding: 10px;
+            width: auto;
+            text-align: center;
+            margin: 0;
+
+            a{
+                color: white;
+                font-size: 90%;
+                text-decoration: none;
+            }
+        }
+
+    }
+        
+}
+
+/* ------------------STYLES FOR SMARTPHONE------------------ */
+
+@media (max-width: 1200px){
+
+    body{
+
+        .principal-container{
+
+            h1{
+                font-size: 30px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+
+            img{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            iframe{
+                width: 330px;
+                height: 300px;
+            }
+
+            #testimonial{
+                text-align: justify;
+            }
+
+            #first-section{
+                padding-top: 5rem;
+            }
+
+            .lists{
+                padding-top: 6rem;
+            }
+
+            .logo-nav-container{
+
+                .menu-icon{
+                    display: block;
+                    cursor: pointer;
+                    color: white;
+                }
+
+                .logo{
+                    letter-spacing: 8px;
+                    font-size: 1.2em;
+                }
+
+            }
+
+            .navigation{
+                width: 100%;
+                margin-top: 1rem;
+                ul{
+                    display: none;
+                    li{
+                        display: block;
+    
+                        a{
+                            display: block;
+                            padding: 0.5rem 0;
+                            transition: all 0.4s linear;
+                            border-radius: 5px;
+                        }
+    
+                        a:hover{
+                            background: #4a4a4a;
+                        }
+                    }
+                }
+
+                ul.show{
+                    display: block;
+                }
+            }
+
+            .pie{
+                a{
+                    font-size: 12px;
+                }
+            }
+
+            .tables{
+                width: auto;
+                font-size: 10px;
+            }
+
+        }
+        
+    }
+
+}

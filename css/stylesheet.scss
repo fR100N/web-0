@@ -1,0 +1,270 @@
+body{
+
+    background: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    .principal-container{
+        margin: 0;
+
+        #first-section{
+            padding-top: 10rem;
+        }
+
+        #testimonial {
+            background: #cccccc;
+            padding: 50px 0 30px 0;
+            text-align:center;
+            margin-top: 40px;
+        }
+
+        #info-one{
+            margin-bottom: 4%;
+        }
+
+        .container{
+            margin: 0 auto;
+        }
+
+        .header{
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 1;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .logo-nav-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .logo{
+                letter-spacing: 15px;
+                font-size: 1.4em;
+            }
+
+            .menu-icon{
+                display: none;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        .navigation{
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li{
+                    display: inline-block;
+
+                    a{
+                        display: block;
+                        padding: 0.5rem 1rem;
+                        transition: all 0.4s linear;
+                        border-radius: 5px;
+                    }
+
+                    a:hover{
+                        background: #4a4a4a;
+                    }
+                }
+            }
+        }
+
+        #important-info{
+            ul{
+                list-style: none;
+                text-align: left;
+
+                li{
+                    padding: 0.5rem;
+
+                    i{
+                        margin-right: 5px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+        #button-import{
+            color: rgb(248, 98, 98);
+        }
+
+        #button-import:hover{
+            color: white;
+            background: black;
+        }
+
+        .pie{
+            background: #333;
+            padding: 10px;
+            width: auto;
+            text-align: center;
+            margin: 0;
+
+            a{
+                color: white;
+                font-size: 90%;
+                text-decoration: none;
+            }
+        }
+
+        .contact-icons{
+            background: #333;
+            padding: 5px;
+            width: auto;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+                display: inline-block;
+                margin-right: 1%;
+            }
+
+            i{
+                width: auto;
+                color: #cccccc;
+                font-size: 23px;
+                padding: 2px;
+                margin-top: 0.5rem;
+            }
+
+            i:hover{
+                color: lightgreen;
+            }
+        }
+
+        #contact{
+            margin-top: 6rem; 
+            background: url(../img/que-ver-en-gran-canaria.jpg) no-repeat; 
+            background-size: cover;
+        }
+        
+        #h2-aux{
+            display: none;
+        }
+
+        .fotos{
+            width: 1100px;
+            text-align: left;
+
+        }
+
+    }
+        
+}
+
+/* ------------------STYLES FOR SMARTPHONE------------------ */
+
+@media (max-width: 800px){
+
+    body{
+
+        .principal-container{
+
+            h1{
+                font-size: 30px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+
+            img{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            #testimonial{
+                text-align: justify;
+            }
+
+            #first-section{
+                padding-top: 5rem;
+            }
+
+            .logo-nav-container{
+
+                .menu-icon{
+                    display: block;
+                    cursor: pointer;
+                    color: white;
+                }
+
+                .logo{
+                    letter-spacing: 8px;
+                    font-size: 1.2em;
+                }
+
+            }
+
+            .navigation{
+                width: 100%;
+                margin-top: 1rem;
+                ul{
+                    display: none;
+                    li{
+                        display: block;
+    
+                        a{
+                            display: block;
+                            padding: 0.5rem 0;
+                            transition: all 0.4s linear;
+                            border-radius: 5px;
+                        }
+    
+                        a:hover{
+                            background: #4a4a4a;
+                        }
+                    }
+                }
+
+                ul.show{
+                    display: block;
+                }
+            }
+
+            .pie{
+                a{
+                    font-size: 12px;
+                }
+            }
+
+            #contact-mail{
+                margin-top: 6rem;
+            }
+
+            .contact-icons{
+                i{
+                    padding: 5px;
+                }
+            }
+
+            #h2-aux{
+                display: block;
+                color: #333;
+                font-weight: bold;
+                text-align: center;
+            }
+
+        }
+        
+    }
+
+}
